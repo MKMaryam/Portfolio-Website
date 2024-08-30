@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        /* Contact Form Styling */
+        
+        .contact-form {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(129, 102, 148);
+            padding: 100px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 300px;
+            border-radius: 30px;
+            
+        }
+
+        .contact-form h2 {
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body style="background-image: url('assets/css/images/bokeh2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+
+    <div class="contact-form">
+        <form>
+            <h2>Get in Touch!</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</body>
+</html>
